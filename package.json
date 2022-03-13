@@ -1,0 +1,101 @@
+{
+  "name": "coreui-angular-dev",
+  "version": "4.0.0-alpha.13",
+  "description": "CoreUI Components Library for Angular",
+  "license": "MIT",
+  "author": "The CoreUI Team (https://github.com/orgs/coreui/people)",
+  "scripts": {
+    "lib": "ng",
+    "watch:lib:dev": "ng build coreui-angular --watch --configuration development",
+    "build:lib:prod": "ng build coreui-angular",
+    "test:lib:dev": "ng test coreui-angular",
+    "test:lib:prod": "ng test coreui-angular --karmaConfig=projects/coreui-angular/karma.conf.github.js",
+    "prepublish:lib": "ng lint coreui-angular && ng test coreui-angular --watch=false && ng build coreui-angular",
+    "publish:lib": "cd dist/coreui-angular/ && npm publish --tag next --dry-run",
+    "lint:lib": "ng lint coreui-angular",
+    "link:lib": "cd dist/coreui-angular/ && npm link",
+    "chartjs": "ng",
+    "watch:chartjs:dev": "ng build coreui-angular-chartjs --watch --configuration development",
+    "build:chartjs:prod": "ng build coreui-angular-chartjs",
+    "test:chartjs:dev": "ng test coreui-angular-chartjs",
+    "test:chartjs:prod": "ng test coreui-angular-chartjs --karmaConfig=projects/coreui-angular-chartjs/karma.conf.github.js",
+    "prepublish:chartjs": "ng lint coreui-angular-chartjs && ng test coreui-angular-chartjs --watch=false && ng build coreui-angular-chartjs",
+    "publish:chartjs": "cd dist/coreui-angular-chartjs/ && npm publish --tag next --dry-run",
+    "lint:chartjs": "ng lint coreui-angular-chartjs",
+    "link:chartjs": "cd dist/coreui-angular-chartjs/ && npm link"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~13.2.0",
+    "@angular/cdk": "~13.2.0",
+    "@angular/common": "~13.2.0",
+    "@angular/compiler": "~13.2.0",
+    "@angular/core": "~13.2.0",
+    "@angular/forms": "~13.2.0",
+    "@angular/localize": "~13.2.0",
+    "@angular/platform-browser": "~13.2.0",
+    "@angular/platform-browser-dynamic": "~13.2.0",
+    "@angular/router": "~13.2.0",
+    "@coreui/chartjs": "^3.0.0",
+    "@coreui/icons-angular": "^3.0.0-alpha.4",
+    "@popperjs/core": "^2.11.0",
+    "chart.js": "~3.7.1",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~13.2.0",
+    "@angular-eslint/builder": "~13.1.0",
+    "@angular-eslint/eslint-plugin": "~13.1.0",
+    "@angular-eslint/eslint-plugin-template": "~13.1.0",
+    "@angular-eslint/schematics": "~13.1.0",
+    "@angular-eslint/template-parser": "~13.1.0",
+    "@angular/cli": "~13.2.0",
+    "@angular/compiler-cli": "~13.2.0",
+    "@angular/language-service": "~13.2.0",
+    "@types/jasmine": "~3.10.0",
+    "@types/lodash-es": "^4.17.6",
+    "@types/node": "^16.11.25",
+    "@typescript-eslint/eslint-plugin": "~5.12.1",
+    "@typescript-eslint/parser": "~5.12.1",
+    "eslint": "~8.9.0",
+    "jasmine-core": "~4.0.1",
+    "karma": "~6.3.16",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.1.0",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "lodash-es": "^4.17.21",
+    "ng-packagr": "^13.2.0",
+    "prettier": "^2.5.1",
+    "typescript": "~4.5.2"
+  },
+  "keywords": [
+    "angular",
+    "angular-component",
+    "angular component",
+    "angular bootstrap",
+    "bootstrap angular",
+    "ui library",
+    "ui components",
+    "component library",
+    "components",
+    "CoreUI"
+  ],
+  "homepage": "https://coreui.io/angular/",
+  "bugs": {
+    "url": "https://github.com/coreui/coreui-angular/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coreui/coreui-angular.git"
+  },
+  "config": {
+    "version_short": "4.0"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.15.0 || >=16.10.0",
+    "npm": ">=6"
+  }
+}
